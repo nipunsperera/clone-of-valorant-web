@@ -16,3 +16,250 @@
     clear: both;
 }
 
+
+/* ------------------Layout------------------ */
+
+
+/* =====Header START===== */
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+header>#nav,#logo,#play{
+    height: 78px;
+    float: left;
+}
+
+header>#logo{
+    background-color: #111;
+    width: 169px;
+    
+}
+
+header>nav{
+    background-color: #111;
+    width: calc(100% - (169px + 188px));
+    
+}
+
+header>#play{
+    /* background-color: green; */
+    width: 188px;
+}
+
+/* --------Left Coloumn-------- */
+
+header>#play{
+    padding-right: 32px;
+    background-color: #111;
+}
+
+
+header>#play>div:first-child{
+    position: relative;
+    float: left;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 6px 0 6px;
+    
+}
+
+header>#play>div:last-child{
+    padding: 0 6px;
+}
+
+header>#play>div:last-child{
+    position: relative;
+    float: left;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header>#play>div:first-child>a>ion-icon{
+    color: white;
+    font-size: 1.2rem;
+}
+
+header>#play>div:first-child>a{
+    height: 32px;
+    width: 32px;
+}
+
+header>#play>div:last-child>a>button{
+    color: #111;
+    font-size: 13px;
+    font-weight: bold;
+    background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
+    border: none;
+    border-radius: 12px;
+    height: 32px;
+    padding: 8px 16px;
+    cursor: pointer;
+    letter-spacing: 1px;
+
+}
+
+header>#play>div:last-child>a>button:hover{
+    background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(235, 117, 96) 100%);
+}
+
+/* --------Left Coloumn END-------- */
+
+/* --------Mid Coloumn START-------- */
+
+header>#nav>div{
+    position: relative;
+    float: left;
+    width: fit-content;
+    height: 100%;
+}
+
+
+header>#nav>div:hover p{
+    background-color: rgba(128,128,128,.3);
+    border-radius: 6.4px;
+}
+
+header>#nav>div:hover svg path{
+    fill: rgb(255, 255, 255);
+}
+
+
+
+header>#nav>div:first-child{
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+header>#nav>div>a{
+    text-decoration: none;
+}
+
+
+header>#nav>div>a>p{
+    color: white;
+    position: relative;
+    letter-spacing: 1px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "FF Mark W05";
+    padding: 7.5px 16px;
+}
+
+header>#nav>div>a>svg{
+    width: 26px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+header>#nav>div>a>p>svg{
+   /* padding-left: 5px; */
+   width: 10px;
+   height: 10px;
+   margin-left: 5px;
+}
+
+/* SUB MENU OF GAME INFO */
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    top: 85%;
+    background-color: #292929;
+    width: 200px;
+    height: fit-content;
+    text-align: left;
+    z-index: 1;
+}
+
+.sub-menu>li{
+    margin: 10px;
+}
+
+.sub-menu>.underline-bar{
+    height: 4px;
+    width: 100%;
+    background-color: rgb(255, 70, 85);
+}
+.underline-bar-2{
+    display: none;
+    position: relative;
+    top: 27px;
+    color: white;
+    height: 4px;
+    width: 100%;
+    background-color: rgb(255, 70, 85);
+}
+
+header>#nav>div:hover .underline-bar-2{
+    display: block;
+}   
+
+.sub-menu>li>a{
+    color: #c7c7c7;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-family: "FF Mark W05";
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.sub-menu>li:hover {
+    background-color: rgba(128,128,128,.3);
+    border-radius: 15px;
+}
+
+header>#nav>div:hover .sub-menu{
+    display: block;
+}
+
+/* --------Mid Coloumn END-------- */
+
+/* --------First Coloumn START-------- */
+
+
+header>#logo>div{
+    width: fit-content;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding-right: 5px;
+    
+}
+
+header>#logo>div>svg{
+    vertical-align: middle;   
+}
+
+header>#logo>div>svg:first-child path{
+    fill: white;
+}
+
+header>#logo>div>svg:last-child{
+    width: 10px;
+    height: 10px;
+    
+}
+
+header>#logo>div:hover svg path{
+    fill: red;
+}
+
+/* --------First Coloumn END-------- */
+
+
+
+
+
+/* =====Header END===== */
